@@ -99,15 +99,18 @@ const Navbar = () => {
           >
             + Create shipment
           </button>
-          <div className="flex items-center pt-4">
-            <div className="bg-purple-600 rounded-full h-10 w-10 flex items-center justify-center">
+          <div className="flex items-center pt-2">
+            <div className="bg-purple-600 rounded-full h-8 w-8 flex items-center justify-center">
               <span className="text-white text-sm font-bold">DS</span> {/* Initials for Darrell Steward */}
             </div>
-            <div className="ml-4">
-            <img src="https://cdn3.iconfinder.com/data/icons/navigation-and-settings/24/Material_icons-01-13-512.png" alt="opt" className='ml-auto w-3 h-3'/>
-              <div className="text-xs font-semibold text-gray-800">Darrell Steward</div>
-              <div className="text-xs text-gray-600">Manager</div>
-            </div>
+            <div className="flex ml-3 items-center">
+             <div className='flex flex-col' >
+             <div className="text-[10px] font-bold text-gray-800">Darrell Steward</div>
+               <div className="text-xs text-gray-600">Manager</div>
+              </div>
+             <img src="https://cdn3.iconfinder.com/data/icons/navigation-and-settings/24/Material_icons-01-13-512.png" alt="opt" className="ml-6 -mt-[15%] w-2 h-2" />
+           </div>
+
           </div>
         </div>
       )}
@@ -116,3 +119,4 @@ const Navbar = () => {
 };
 
 export default Navbar;
+
